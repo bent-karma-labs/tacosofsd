@@ -1,613 +1,189 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>TacosOfSD.com — Premium San Diego Taco Domain</title>
-  <meta
-    name="description"
-    content="TacosOfSD.com is a memorable .com domain built for a San Diego taco brand, restaurant, food guide, delivery service, or food platform."
-  />
-
-  <meta property="og:title" content="TacosOfSD.com — Premium San Diego Taco Domain" />
-  <meta
-    property="og:description"
-    content="Own a memorable San Diego taco brand in .com."
-  />
-  <meta property="og:type" content="website" />
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>TacosOfSD.com — Own the Name</title>
+  <meta name="description" content="TacosOfSD.com is a memorable San Diego taco .com domain available for purchase. Buy now for $2,495.">
+  <meta name="theme-color" content="#0a0b09">
+  <meta property="og:title" content="TacosOfSD.com — Own the Name">
+  <meta property="og:description" content="The San Diego taco name is for sale. Buy TacosOfSD.com for $2,495.">
+  <meta property="og:type" content="website">
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
+    :root{
+      --bg:#0a0b09;--paper:#f7f0dc;--ink:#12130f;--muted:#b7b09b;
+      --hot:#ff5a1f;--gold:#ffc857;--lime:#b8e33d;--pink:#ff4f81;
+      --line:rgba(255,255,255,.13);--card:rgba(255,255,255,.055);
+      --shadow:0 35px 100px rgba(0,0,0,.45);--max:1180px
     }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-        "Segoe UI", sans-serif;
-      background:
-        radial-gradient(circle at top left, rgba(255, 165, 0, 0.16), transparent 32%),
-        radial-gradient(circle at top right, rgba(0, 200, 180, 0.12), transparent 30%),
-        #08110f;
-      color: #fff;
-      min-height: 100vh;
-      line-height: 1.5;
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    .wrapper {
-      width: min(1120px, calc(100% - 36px));
-      margin: auto;
-    }
-
-    header {
-      padding: 28px 0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .logo {
-      font-size: 1.15rem;
-      font-weight: 900;
-      letter-spacing: -0.03em;
-    }
-
-    .logo span {
-      color: #ffb703;
-    }
-
-    .top-pill {
-      border: 1px solid rgba(255,255,255,0.16);
-      background: rgba(255,255,255,0.06);
-      padding: 9px 14px;
-      border-radius: 999px;
-      font-size: 0.82rem;
-      color: #dce8e4;
-    }
-
-    .hero {
-      min-height: 72vh;
-      display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      gap: 55px;
-      align-items: center;
-      padding: 55px 0 75px;
-    }
-
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 8px 13px;
-      border-radius: 999px;
-      background: rgba(255, 183, 3, 0.11);
-      border: 1px solid rgba(255, 183, 3, 0.28);
-      color: #ffd166;
-      font-weight: 800;
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      margin-bottom: 22px;
-    }
-
-    .dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: #22c55e;
-      box-shadow: 0 0 16px rgba(34,197,94,0.7);
-    }
-
-    h1 {
-      font-size: clamp(3.1rem, 8vw, 6.5rem);
-      line-height: 0.9;
-      letter-spacing: -0.065em;
-      max-width: 760px;
-      margin-bottom: 25px;
-    }
-
-    h1 .yellow {
-      color: #ffb703;
-    }
-
-    .tagline {
-      max-width: 660px;
-      font-size: clamp(1.05rem, 2vw, 1.3rem);
-      color: #b9c9c4;
-      margin-bottom: 32px;
-    }
-
-    .cta-row {
-      display: flex;
-      gap: 14px;
-      flex-wrap: wrap;
-      align-items: center;
-    }
-
-    .btn {
-      border: none;
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 16px 24px;
-      border-radius: 14px;
-      font-weight: 900;
-      font-size: 1rem;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .btn:hover {
-      transform: translateY(-2px);
-    }
-
-    .btn-primary {
-      color: #101010;
-      background: linear-gradient(135deg, #ffd166, #ff9f1c);
-      box-shadow: 0 15px 40px rgba(255,159,28,0.25);
-    }
-
-    .btn-secondary {
-      border: 1px solid rgba(255,255,255,0.18);
-      background: rgba(255,255,255,0.06);
-      color: #fff;
-    }
-
-    .price-note {
-      margin-top: 15px;
-      color: #93aaa4;
-      font-size: 0.9rem;
-    }
-
-    .domain-card {
-      position: relative;
-      border-radius: 30px;
-      padding: 32px;
-      background:
-        linear-gradient(145deg, rgba(255,255,255,0.1), rgba(255,255,255,0.035));
-      border: 1px solid rgba(255,255,255,0.15);
-      box-shadow: 0 30px 80px rgba(0,0,0,0.35);
-      overflow: hidden;
-    }
-
-    .domain-card::before {
-      content: "";
-      position: absolute;
-      width: 250px;
-      height: 250px;
-      top: -100px;
-      right: -80px;
-      border-radius: 50%;
-      background: rgba(255,183,3,0.12);
-      filter: blur(20px);
-    }
-
-    .taco {
-      font-size: 7rem;
-      line-height: 1;
-      margin-bottom: 22px;
-      filter: drop-shadow(0 15px 20px rgba(0,0,0,0.25));
-    }
-
-    .card-label {
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      font-size: 0.72rem;
-      color: #9db1ac;
-      font-weight: 800;
-      margin-bottom: 9px;
-    }
-
-    .domain-name {
-      font-size: clamp(1.8rem, 5vw, 3rem);
-      font-weight: 950;
-      letter-spacing: -0.05em;
-      word-break: break-word;
-    }
-
-    .domain-name span {
-      color: #ffb703;
-    }
-
-    .price-box {
-      margin-top: 25px;
-      padding: 20px;
-      border-radius: 20px;
-      background: rgba(0,0,0,0.2);
-      border: 1px solid rgba(255,255,255,0.08);
-    }
-
-    .price {
-      font-size: 2.6rem;
-      font-weight: 950;
-      letter-spacing: -0.05em;
-    }
-
-    .price-sub {
-      color: #95aaa4;
-      font-size: 0.9rem;
-      margin-top: 4px;
-    }
-
-    .section {
-      padding: 85px 0;
-    }
-
-    .section-title {
-      font-size: clamp(2rem, 5vw, 3.6rem);
-      letter-spacing: -0.05em;
-      line-height: 1;
-      margin-bottom: 16px;
-    }
-
-    .section-sub {
-      color: #a9bbb6;
-      max-width: 680px;
-      margin-bottom: 36px;
-      font-size: 1.05rem;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-    }
-
-    .use-card {
-      min-height: 190px;
-      padding: 25px;
-      border-radius: 22px;
-      background: rgba(255,255,255,0.045);
-      border: 1px solid rgba(255,255,255,0.1);
-    }
-
-    .icon {
-      font-size: 2rem;
-      margin-bottom: 15px;
-    }
-
-    .use-card h3 {
-      font-size: 1.15rem;
-      margin-bottom: 7px;
-    }
-
-    .use-card p {
-      color: #99ada7;
-      font-size: 0.95rem;
-    }
-
-    .selling-point {
-      margin-top: 55px;
-      padding: 38px;
-      border-radius: 28px;
-      background: linear-gradient(120deg, rgba(255,183,3,0.11), rgba(0,200,180,0.06));
-      border: 1px solid rgba(255,255,255,0.1);
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 30px;
-      align-items: center;
-    }
-
-    .selling-point h2 {
-      font-size: clamp(1.6rem, 4vw, 2.6rem);
-      letter-spacing: -0.04em;
-      margin-bottom: 10px;
-    }
-
-    .selling-point p {
-      color: #a9bbb6;
-      max-width: 700px;
-    }
-
-    .big-price {
-      font-size: 2.8rem;
-      font-weight: 950;
-      white-space: nowrap;
-      color: #ffd166;
-    }
-
-    footer {
-      padding: 30px 0 45px;
-      color: #71837e;
-      font-size: 0.82rem;
-      border-top: 1px solid rgba(255,255,255,0.08);
-      text-align: center;
-    }
-
-    @media (max-width: 860px) {
-      .hero {
-        grid-template-columns: 1fr;
-        padding-top: 30px;
-      }
-
-      .grid {
-        grid-template-columns: 1fr;
-      }
-
-      .selling-point {
-        grid-template-columns: 1fr;
-      }
-
-      .big-price {
-        white-space: normal;
-      }
-    }
-
-    @media (max-width: 520px) {
-      .wrapper {
-        width: min(100% - 24px, 1120px);
-      }
-
-      header {
-        padding: 18px 0;
-      }
-
-      .top-pill {
-        display: none;
-      }
-
-      .hero {
-        padding: 40px 0 55px;
-      }
-
-      .domain-card {
-        padding: 25px;
-      }
-
-      .taco {
-        font-size: 5rem;
-      }
-
-      .btn {
-        width: 100%;
-      }
-    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:
+      radial-gradient(900px 500px at 8% 0%,rgba(255,90,31,.17),transparent 63%),
+      radial-gradient(800px 520px at 92% 9%,rgba(184,227,61,.10),transparent 62%),
+      linear-gradient(180deg,#0a0b09 0%,#0d120d 52%,#080907 100%);
+      color:#fff;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;overflow-x:hidden}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.22;background-image:radial-gradient(rgba(255,255,255,.18) .75px,transparent .75px);background-size:17px 17px;mask-image:linear-gradient(#000,transparent 72%)}
+    a{text-decoration:none;color:inherit}
+    .wrap{width:min(var(--max),calc(100% - 38px));margin:auto}
+    .nav{position:sticky;top:0;z-index:50;background:rgba(10,11,9,.74);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.08)}
+    .navin{height:62px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{font-weight:950;letter-spacing:-.055em;font-size:1.05rem}.brand b{color:var(--gold)}
+    .status{display:flex;align-items:center;gap:8px;font-size:.75rem;text-transform:uppercase;letter-spacing:.14em;font-weight:900;color:#ddd8c9}
+    .dot{width:8px;height:8px;border-radius:50%;background:#67e39d;box-shadow:0 0 18px #67e39d}
+    .navbuy{padding:10px 15px;border-radius:12px;background:var(--gold);color:#17150d;font-weight:950;font-size:.82rem}
+    .hero{min-height:790px;display:grid;grid-template-columns:1.06fr .94fr;align-items:center;gap:55px;padding:90px 0 70px;position:relative}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(255,200,87,.28);background:rgba(255,200,87,.08);color:#ffe29a;border-radius:999px;padding:9px 14px;font-size:.72rem;font-weight:950;text-transform:uppercase;letter-spacing:.14em}
+    h1{margin:20px 0 0;max-width:800px;font-size:clamp(4rem,9.3vw,8.2rem);line-height:.82;letter-spacing:-.088em}
+    h1 .one{color:var(--paper)}h1 .two{color:var(--gold)}h1 .three{color:var(--hot)}
+    .lead{margin:30px 0 0;color:var(--muted);font-size:clamp(1.06rem,2vw,1.28rem);max-width:690px}
+    .lead strong{color:#fff2c6}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:15px;padding:17px 21px;font-weight:950;letter-spacing:-.025em;transition:.2s ease}
+    .btn:hover{transform:translateY(-3px)}
+    .primary{background:linear-gradient(135deg,#ffd768,#ff9d20);color:#17140a;box-shadow:0 18px 55px rgba(255,157,32,.25)}
+    .secondary{border:1px solid var(--line);background:rgba(255,255,255,.045);color:#fff}
+    .fine{margin-top:12px;color:#7f8981;font-size:.83rem}
+    .stage{position:relative;min-height:590px;display:grid;place-items:center}
+    .halo{position:absolute;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(255,90,31,.18),transparent 60%);filter:blur(10px)}
+    .ring{position:absolute;width:530px;height:530px;border-radius:50%;border:1px solid rgba(255,255,255,.08);box-shadow:0 0 0 30px rgba(255,255,255,.012),0 0 0 60px rgba(255,255,255,.009);animation:spin 30s linear infinite}
+    .ring:after{content:"";position:absolute;right:22px;top:82px;width:13px;height:13px;border-radius:50%;background:var(--lime);box-shadow:0 0 25px var(--lime)}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    .sale-card{position:relative;z-index:3;width:min(100%,470px);border-radius:34px;padding:27px;background:linear-gradient(145deg,rgba(255,255,255,.13),rgba(255,255,255,.035));border:1px solid rgba(255,255,255,.16);box-shadow:var(--shadow);overflow:hidden}
+    .sale-card:before{content:"";position:absolute;right:-90px;top:-100px;width:280px;height:280px;border-radius:50%;background:rgba(255,200,87,.13);filter:blur(18px)}
+    .sticker{position:absolute;right:18px;top:18px;transform:rotate(9deg);background:var(--hot);color:#fff;font-weight:950;text-transform:uppercase;letter-spacing:.07em;padding:10px 12px;border-radius:11px;font-size:.72rem;box-shadow:0 8px 30px rgba(255,90,31,.25)}
+    .taco{width:145px;height:115px;margin:16px auto 24px;position:relative;display:grid;place-items:center}
+    .shell{width:130px;height:85px;border:13px solid var(--gold);border-bottom-width:19px;border-radius:70% 70% 35% 35%;transform:rotate(-7deg);box-shadow:0 10px 0 #b96d1e,0 18px 28px rgba(0,0,0,.28);position:relative;overflow:hidden;background:linear-gradient(155deg,#ffd867,#ffb33b)}
+    .shell:before{content:"";position:absolute;left:16px;right:14px;bottom:7px;height:30px;border-radius:60%;background:linear-gradient(90deg,#66a84e 0 26%,#fff0c2 26% 48%,#b33922 48% 76%,#65a548 76%);filter:saturate(.85)}
+    .shell:after{content:"";position:absolute;top:13px;left:20px;width:9px;height:24px;border-radius:10px;background:rgba(122,69,16,.28);box-shadow:30px -5px rgba(122,69,16,.23),58px 2px rgba(122,69,16,.24)}
+    .tiny{font-size:.7rem;text-transform:uppercase;letter-spacing:.14em;color:#8e9a92;font-weight:950}
+    .domain{font-size:clamp(2.35rem,6vw,4rem);font-weight:950;line-height:.9;letter-spacing:-.07em;overflow-wrap:anywhere;margin-top:6px}.domain span{color:var(--gold)}
+    .pricebox{margin-top:22px;padding:19px;border-radius:22px;background:rgba(0,0,0,.24);border:1px solid rgba(255,255,255,.08)}
+    .price{font-size:3.25rem;line-height:1;font-weight:950;letter-spacing:-.07em;color:#fff3c6}
+    .subprice{margin-top:6px;color:#8f9e97;font-size:.88rem}
+    .verify{margin-top:12px;color:#9ce4cc;font-weight:850;font-size:.8rem;display:flex;gap:7px;align-items:center}
+    .seal{width:18px;height:18px;border-radius:50%;display:grid;place-items:center;background:rgba(102,227,196,.13);border:1px solid rgba(102,227,196,.26)}
+    .bigbtn{width:100%;margin-top:14px}
+    section{padding:105px 0}
+    .eyebrow2{color:var(--gold);font-size:.72rem;text-transform:uppercase;font-weight:950;letter-spacing:.15em}
+    h2{font-size:clamp(2.45rem,6vw,5.2rem);line-height:.9;letter-spacing:-.075em;margin:11px 0 17px;max-width:900px}
+    .sub{color:var(--muted);font-size:1.08rem;max-width:760px}
+    .grid{margin-top:42px;display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+    .card{padding:27px;border:1px solid var(--line);border-radius:24px;background:var(--card);min-height:220px}
+    .num{font-size:.74rem;color:#7d8b83;font-weight:950;letter-spacing:.13em}
+    .ico{font-size:2.2rem;margin:20px 0 14px}.card h3{margin:0 0 8px;font-size:1.18rem}.card p{margin:0;color:#96a69e;font-size:.94rem}
+    .band{margin-top:50px;border-radius:30px;border:1px solid rgba(255,255,255,.12);padding:38px;background:linear-gradient(125deg,rgba(255,90,31,.1),rgba(184,227,61,.06));display:grid;grid-template-columns:1fr auto;align-items:center;gap:25px}
+    .band h3{font-size:clamp(1.8rem,4vw,3rem);line-height:.95;letter-spacing:-.055em;margin:0 0 9px}.band p{margin:0;color:#a8b6af;max-width:740px}
+    .why{display:grid;grid-template-columns:.9fr 1.1fr;gap:55px;align-items:start}
+    .stack{display:grid;gap:14px}.reason{padding:24px;border-radius:22px;background:rgba(255,255,255,.045);border:1px solid var(--line)}.reason b{display:block;font-size:1.06rem;margin-bottom:5px}.reason p{margin:0;color:#92a29a;font-size:.94rem}
+    .closing{text-align:center;max-width:900px;margin:auto}.closing h2{margin-left:auto;margin-right:auto;font-size:clamp(3.3rem,8vw,7rem)}.closing .sub{margin:0 auto 28px}
+    .closingprice{font-size:3.6rem;font-weight:950;letter-spacing:-.07em;color:#ffe7a5;margin-bottom:18px}
+    footer{text-align:center;padding:25px 0 125px;color:#68766f;font-size:.8rem;border-top:1px solid rgba(255,255,255,.08)}
+    .sticky{position:fixed;left:50%;bottom:17px;transform:translateX(-50%);z-index:60;width:min(640px,calc(100% - 18px));display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px 8px 8px 15px;border-radius:18px;background:rgba(8,10,8,.88);border:1px solid rgba(255,255,255,.15);backdrop-filter:blur(18px);box-shadow:0 20px 70px rgba(0,0,0,.5)}
+    .sticky span{font-size:.88rem;font-weight:900}.sticky strong{color:#ffd86a}
+    .sticky .btn{padding:12px 17px;border-radius:12px;white-space:nowrap}
+    @media(max-width:920px){.hero{grid-template-columns:1fr;padding-top:60px}.stage{min-height:520px}.why{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.band{grid-template-columns:1fr}}
+    @media(max-width:620px){.wrap{width:min(var(--max),calc(100% - 24px))}.status{display:none}.hero{padding:47px 0 30px}h1{font-size:clamp(3.6rem,17vw,5.6rem)}.stage{min-height:430px}.ring{width:370px;height:370px}.halo{width:380px;height:380px}.sale-card{padding:22px}.grid{grid-template-columns:1fr}section{padding:78px 0}.sticky{padding-left:11px}.sticky span{font-size:.78rem}.sticky .btn{padding:12px 13px}.navbuy{display:none}}
+    @media(prefers-reduced-motion:reduce){.ring{animation:none}.btn{transition:none}}
   </style>
 </head>
-
 <body>
-
-  <div class="wrapper">
-
-    <header>
-      <div class="logo">Tacos<span>OfSD</span>.com</div>
-      <div class="top-pill">● AVAILABLE NOW</div>
-    </header>
-
-    <main>
-
-      <section class="hero">
-
-        <div>
-          <div class="eyebrow">
-            <span class="dot"></span>
-            Premium .com Domain
-          </div>
-
-          <h1>
-            Own the name for
-            <span class="yellow">San Diego tacos.</span>
-          </h1>
-
-          <p class="tagline">
-            TacosOfSD.com is a short, memorable .com built for a taco shop,
-            restaurant group, food brand, delivery company, food guide,
-            or the next big San Diego taco idea.
-          </p>
-
-          <div class="cta-row">
-
-            <!-- CHANGE THIS LINK TO YOUR AFTERNIC BUY-NOW URL IF NEEDED -->
-            <a
-              class="btn btn-primary"
-              href="https://www.afternic.com/domain/tacosofsd.com"
-              target="_blank"
-              rel="noopener"
-            >
-              BUY TACOSOFSD.COM →
-            </a>
-
-            <!-- This can be changed to your Dynadot listing URL -->
-            <a
-              class="btn btn-secondary"
-              href="https://www.dynadot.com/market"
-              target="_blank"
-              rel="noopener"
-            >
-              View Marketplace
-            </a>
-
-          </div>
-
-          <div class="price-note">
-            Buy it now · Secure transfer through the marketplace
-          </div>
-        </div>
-
-
-        <div class="domain-card">
-
-          <div class="taco">🌮</div>
-
-          <div class="card-label">The domain</div>
-
-          <div class="domain-name">
-            Tacos<span>OfSD</span>.com
-          </div>
-
-          <div class="price-box">
-            <div class="card-label">Buy it now</div>
-            <div class="price">$2,495</div>
-            <div class="price-sub">
-              Own the domain. Build the brand.
-            </div>
-          </div>
-
-          <a
-            class="btn btn-primary"
-            href="https://www.afternic.com/domain/tacosofsd.com"
-            target="_blank"
-            rel="noopener"
-            style="width:100%; margin-top:16px;"
-          >
-            GET THE DOMAIN
-          </a>
-
-        </div>
-
-      </section>
-
-
-      <section class="section">
-
-        <h2 class="section-title">
-          One name. A lot of possibilities.
-        </h2>
-
-        <p class="section-sub">
-          The name instantly connects tacos with San Diego — making it flexible
-          enough for restaurants, media, delivery, guides, events, merchandise,
-          and food-tech ideas.
-        </p>
-
-
-        <div class="grid">
-
-          <div class="use-card">
-            <div class="icon">🌮</div>
-            <h3>Taco Restaurant</h3>
-            <p>
-              Build a memorable local restaurant brand around a domain customers
-              can easily remember.
-            </p>
-          </div>
-
-          <div class="use-card">
-            <div class="icon">📍</div>
-            <h3>San Diego Food Guide</h3>
-            <p>
-              Create a destination for discovering tacos, taquerias,
-              reviews and local favorites.
-            </p>
-          </div>
-
-          <div class="use-card">
-            <div class="icon">🚀</div>
-            <h3>Food Startup</h3>
-            <p>
-              Turn the domain into a food delivery, discovery, ordering,
-              community or media platform.
-            </p>
-          </div>
-
-          <div class="use-card">
-            <div class="icon">📱</div>
-            <h3>App or Community</h3>
-            <p>
-              A clean brand for an app that helps people find tacos around
-              San Diego.
-            </p>
-          </div>
-
-          <div class="use-card">
-            <div class="icon">🔥</div>
-            <h3>Restaurant Group</h3>
-            <p>
-              A strong umbrella name for multiple taco concepts or locations.
-            </p>
-          </div>
-
-          <div class="use-card">
-            <div class="icon">🛍️</div>
-            <h3>Merch & Media</h3>
-            <p>
-              Shirts, hats, social media, events, videos, newsletters and
-              local food content.
-            </p>
-          </div>
-
-        </div>
-
-
-        <div class="selling-point">
-
-          <div>
-            <h2>
-              The right buyer won't need to invent the brand.
-            </h2>
-
-            <p>
-              Tacos + San Diego is already the idea. The buyer gets the
-              name, the .com, and a brand they can start building immediately.
-            </p>
-          </div>
-
-          <div class="big-price">
-            $2,495
-          </div>
-
-        </div>
-
-      </section>
-
-
-      <section class="section" id="buy">
-
-        <div style="text-align:center; max-width:760px; margin:auto;">
-
-          <div class="eyebrow">
-            <span class="dot"></span>
-            Available Now
-          </div>
-
-          <h2 class="section-title">
-            TacosOfSD.com
-          </h2>
-
-          <p class="section-sub" style="margin-left:auto; margin-right:auto;">
-            A memorable San Diego taco domain with room to grow into a
-            restaurant, brand, media company, app or food platform.
-          </p>
-
-          <div class="price" style="font-size:4rem; margin-bottom:20px;">
-            $2,495
-          </div>
-
-          <a
-            class="btn btn-primary"
-            href="https://www.afternic.com/domain/tacosofsd.com"
-            target="_blank"
-            rel="noopener"
-          >
-            BUY NOW →
-          </a>
-
-          <div class="price-note">
-            Purchase handled through the domain marketplace.
-          </div>
-
-        </div>
-
-      </section>
-
-    </main>
-
-    <footer>
-      © 2026 TacosOfSD.com · Domain offered for sale
-    </footer>
-
+  <div class="nav">
+    <div class="wrap navin">
+      <div class="brand">Tacos<span>OfSD</span>.com</div>
+      <div class="status"><i class="dot"></i> Available now</div>
+      <a class="navbuy" href="https://forsale.dynadot.com/tacosofsd.com?drefid=2071" target="_blank" rel="noopener">BUY $2,495 →</a>
+    </div>
   </div>
 
+  <main>
+    <section class="wrap hero">
+      <div>
+        <div class="eyebrow">Premium San Diego .com</div>
+        <h1><span class="one">The taco</span> <span class="two">name.</span><br><span class="three">Already branded.</span></h1>
+        <p class="lead">
+          <strong>TacosOfSD.com</strong> is a clean, memorable domain that immediately connects
+          tacos with San Diego. Put it on a restaurant. Build a food guide. Launch an app.
+          Turn it into a local media brand. The name does the explaining for you.
+        </p>
+        <div class="actions">
+          <a class="btn primary" href="https://forsale.dynadot.com/tacosofsd.com?drefid=2071" target="_blank" rel="noopener">OWN TACOSOFSD.COM →</a>
+          <a class="btn secondary" href="https://forsale.dynadot.com/tacosofsd.com?drefid=2071" target="_blank" rel="noopener">MAKE AN OFFER</a>
+        </div>
+        <div class="fine">Purchase and domain transfer handled securely through Dynadot.</div>
+      </div>
+
+      <div class="stage">
+        <div class="halo"></div><div class="ring"></div>
+        <div class="sale-card">
+          <div class="sticker">For Sale</div>
+          <div class="taco"><div class="shell"></div></div>
+          <div class="tiny">The domain</div>
+          <div class="domain">Tacos<span>OfSD</span>.com</div>
+          <div class="pricebox">
+            <div class="tiny">Buy it now</div>
+            <div class="price">$2,495</div>
+            <div class="subprice">One name. One .com. One shot to own it.</div>
+          </div>
+          <div class="verify"><span class="seal">✓</span> Listed and ready for purchase on Dynadot</div>
+          <a class="btn primary bigbtn" href="https://forsale.dynadot.com/tacosofsd.com?drefid=2071" target="_blank" rel="noopener">GET THE DOMAIN →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <div class="eyebrow2">Why it has legs</div>
+      <h2>A domain that tells the story in two seconds.</h2>
+      <p class="sub">No invented meaning. No cryptic spelling. Just tacos + San Diego + a familiar .com address.</p>
+      <div class="grid">
+        <div class="card"><div class="num">01</div><div class="ico">🌮</div><h3>Instant category</h3><p>“Tacos” makes the concept obvious before the customer ever sees a logo.</p></div>
+        <div class="card"><div class="num">02</div><div class="ico">📍</div><h3>Built-in location</h3><p>“SD” gives the name a compact San Diego identity without making the URL long.</p></div>
+        <div class="card"><div class="num">03</div><div class="ico">.COM</div><h3>The familiar ending</h3><p>A simple .com is easy to say, type, print on a sign, and put on social profiles.</p></div>
+      </div>
+      <div class="band">
+        <div><h3>The buyer doesn’t have to invent the brand.</h3><p>The name already points toward a restaurant, food discovery platform, media property, delivery service, app, events brand, or merchandise line.</p></div>
+        <a class="btn primary" href="https://forsale.dynadot.com/tacosofsd.com?drefid=2071" target="_blank" rel="noopener">BUY IT →</a>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <div class="why">
+        <div>
+          <div class="eyebrow2">Build it your way</div>
+          <h2>One URL. Six directions.</h2>
+          <p class="sub">A strong domain can be the storefront, the media brand, or the platform underneath it.</p>
+        </div>
+        <div class="stack">
+          <div class="reason"><b>🌮 Restaurant / taquería</b><p>A customer-friendly name for a local restaurant or expanding taco concept.</p></div>
+          <div class="reason"><b>📍 San Diego taco guide</b><p>Reviews, maps, taco trails, neighborhood finds, rankings, or local food coverage.</p></div>
+          <div class="reason"><b>📲 Taco discovery app</b><p>A natural home for an app built around finding, saving, rating, or sharing tacos.</p></div>
+          <div class="reason"><b>🚚 Delivery / catering</b><p>A consumer-facing brand for ordering, delivery, catering, pop-ups, or events.</p></div>
+          <div class="reason"><b>🎥 Media / social brand</b><p>Short-form video, newsletter, podcast, creator brand, or food community.</p></div>
+          <div class="reason"><b>🔥 Restaurant group / merch</b><p>An umbrella name that can stretch across concepts, collaborations, and products.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <div class="closing">
+        <div class="eyebrow2">Available now</div>
+        <h2>Don't chase the name later.</h2>
+        <p class="sub">TacosOfSD.com is listed and ready for purchase. The current Buy Now price is $2,495.</p>
+        <div class="closingprice">$2,495</div>
+        <div class="actions" style="justify-content:center">
+          <a class="btn primary" href="https://forsale.dynadot.com/tacosofsd.com?drefid=2071" target="_blank" rel="noopener">BUY TACOSOFSD.COM →</a>
+          <a class="btn secondary" href="https://forsale.dynadot.com/tacosofsd.com?drefid=2071" target="_blank" rel="noopener">MAKE AN OFFER</a>
+        </div>
+        <div class="fine">Secure the domain through Dynadot.</div>
+      </div>
+    </section>
+  </main>
+
+  <div class="sticky">
+    <span>TacosOfSD.com · <strong>$2,495 Buy Now</strong></span>
+    <a class="btn primary" href="https://forsale.dynadot.com/tacosofsd.com?drefid=2071" target="_blank" rel="noopener">BUY NOW →</a>
+  </div>
+
+  <footer>© 2026 TacosOfSD.com · Domain offered for sale</footer>
 </body>
 </html>

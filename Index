@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tacosofsd.com is for sale</title>
+    <style>
+        :root {
+            --bg-light: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --primary-accent: #e05a2b; /* Warm street-cart orange */
+            --pink-accent: #d92b75;    /* Rosa Mexicano */
+            --blue-accent: #0284c7;    /* SoCal Pacific blue */
+            --border-color: #e2e8f0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-main);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 1.5rem;
+        }
+
+        .container {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            max-width: 650px;
+            width: 100%;
+            padding: 3rem 2.5rem;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Culturally inspired clean top border accent */
+        .top-stripe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(90deg, 
+                var(--pink-accent) 0% 25%, 
+                var(--primary-accent) 25% 50%, 
+                #f59e0b 50% 75%, 
+                var(--blue-accent) 75% 100%);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        .status-badge {
+            display: inline-block;
+            background-color: #f1f5f9;
+            color: var(--text-main);
+            padding: 0.35rem 0.85rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 20px;
+            margin-bottom: 1.25rem;
+            border: 1px solid var(--border-color);
+        }
+
+        h1 {
+            font-size: 2.75rem;
+            font-weight: 800;
+            color: var(--text-main);
+            letter-spacing: -0.03em;
+            margin-bottom: 0.5rem;
+        }
+
+        .tagline {
+            font-size: 1.05rem;
+            color: var(--blue-accent);
+            font-weight: 500;
+        }
+
+        .value-pitch {
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+            padding: 2rem 0;
+            margin-bottom: 2.5rem;
+            font-size: 1rem;
+            color: var(--text-muted);
+        }
+
+        .value-pitch p {
+            margin-bottom: 1rem;
+        }
+        .value-pitch p:last-child {
+            margin-bottom: 0;
+        }
+
+        .value-pitch strong {
+            color: var(--text-main);
+            font-weight: 600;
+        }
+
+        .cta-section {
+            text-align: center;
+        }
+
+        .price-box {
+            margin-bottom: 1.5rem;
+        }
+
+        .price-label {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-muted);
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .price-value {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--primary-accent);
+            letter-spacing: -0.02em;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--text-main);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 0.9rem 2.5rem;
+            font-size: 1.05rem;
+            font-weight: 600;
+            border-radius: 6px;
+            transition: background-color 0.15s ease, transform 0.1s ease;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            width: 100%;
+        }
+
+        .btn:hover {
+            background-color: #0f172a;
+            transform: translateY(-1px);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+        }
+
+        footer {
+            margin-top: 2.5rem;
+            text-align: center;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        .trust-networks {
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            font-weight: 500;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 500px) {
+            .container {
+                padding: 2rem 1.5rem;
+            }
+            h1 {
+                font-size: 2.2rem;
+            }
+            .price-value {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="top-stripe"></div>
+        
+        <header>
+            <div class="status-badge">Premium Domain Available</div>
+            <h1>tacosofsd.com</h1>
+            <p class="tagline">The premier digital address for San Diego & border-region taco culture.</p>
+        </header>
+
+        <section class="value-pitch">
+            <p>From authentic Tijuana-style street stands to coastal San Diego craft taquerias, this region boasts one of the most vibrant culinary scenes in North America.</p>
+            <p><strong>tacosofsd.com</strong> is a highly brandable, memorable domain name perfect for a restaurant group, regional food guide, event directory, or mobile app platform looking to anchor their market presence.</p>
+        </section>
+
+        <section class="cta-section">
+            <div class="price-box">
+                <div class="price-label">Fixed Purchase Price</div>
+                <div class="price-value">$2,495 <span style="font-size: 1.25rem; font-weight: 500; color: var(--text-muted);">USD</span></div>
+            </div>
+            <!-- Update the href link below if you list it on an external platform -->
+            <a href="mailto:owner@://tacosofsd.com regarding purchasing tacosofsd.com" class="btn">Secure This Domain</a>
+        </section>
+
+        <footer>
+            <p>Immediate, secure ownership transfer guaranteed.</p>
+            <div class="trust-networks">
+                <span>Escrow.com</span> • <span>Dan.com</span> • <span>Sedo</span>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>

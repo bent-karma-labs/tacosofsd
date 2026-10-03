@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tacosofsd.com/sitemap.xml
